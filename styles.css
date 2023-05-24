@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */ /*//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(43, 247, 43, 0.447);
+    position: fixed;
+    border-bottom: 2px solid black;
+}
+
+header h1{
+    font-family: 'Just Another Hand', cursive;
+    color: rgb(1, 126, 1);
+    margin: auto;
+    font-size: 30px;
+}
+
+.checkbtn{
+    float: right;
+    cursor: pointer;
+    height: fit-content;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 2px;
+    background-color: rgb(5, 145, 5);
+}
+
+#check{
+    display: none;
+}
+
+header ul{
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-image: url(./assets/fondo_ul.jpg);
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    border-right: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    padding: 7px;
+    background-color: green;
+    color: white;
+    border-radius: 2px;
+}
+
+header ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100%;
+    background-image: url(./assets/plantasdeco__1_-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+.logo_div{
+    height: 100%;
+    margin: auto;
+}
+
+.logo_div img{
+    height: 80%;
+    width: 100%;
+    margin-top:7px;
+}
+
