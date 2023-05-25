@@ -29,7 +29,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(43, 247, 43, 0.656);
+    background-color: rgb(43, 247, 43);
     position: fixed;
     border-bottom: 2px solid black;
 }

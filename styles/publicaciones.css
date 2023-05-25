@@ -24,14 +24,19 @@ header ul li a{
 
 /* HEADER */ /*//////////////////////////////////////////////////////////////////////////////////////////////*/
 
+main{
+    background-color: rgba(19, 216, 19, 0.258);
+}
+
 header{
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(43, 247, 43, 0.656);
+    background-color: rgb(43, 247, 43);
     position: fixed;
     border-bottom: 2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header h1{
@@ -126,6 +131,88 @@ header ul::before {
 
 /*  PUBLICACIONES /////////////////////////////////////////////////////////////////////////////////////////////////////  */
 
+
+
 #divPublicaciones{
-    padding-top: 100px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
 }
+
+.divContenedorPubli{
+    width: 90%;
+    height: 500px;
+    display: grid;
+    grid-template-areas: 
+    "info"
+    "imagen"
+    "comment";
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 75% 10%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: rgb(70, 251, 64);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+.perfil_div{
+    grid-area: info;
+    display: grid;
+    grid-template-areas: 
+    "img name seguidores";
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 100%;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+.perfil_div h2{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.perfil_div img{
+    border-radius: 50%;
+    height: 90%;
+    width: 100%;
+    margin: auto;
+}
+
+.perfil_div h4{
+    text-align: center;
+    margin: auto;
+}
+
+.div_imagen_publi{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.div_imagen_publi img{
+    width: 100%;
+    height: 100%;
+}
+
+.div_coments {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+}
+
+.div_coments h4 {
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+
