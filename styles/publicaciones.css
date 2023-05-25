@@ -135,6 +135,7 @@ header ul::before {
 
 #divPublicaciones{
     padding-top: 150px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     row-gap: 70px;
@@ -153,8 +154,10 @@ header ul::before {
     margin: auto;
     border: 1px solid black;
     padding: 15px;
-    background-color: rgb(70, 251, 64);
+    background-image: url(../assets/fondoul.png);
+    background-size: contain;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
 }
 
 
@@ -168,6 +171,7 @@ header ul::before {
     border: 1px solid black;
     font-family: 'Times New Roman', Times, serif;
     background-color: white;
+    border-radius: 16px;
 }
 
 .perfil_div h2{
@@ -175,12 +179,13 @@ header ul::before {
     margin-bottom: auto;
     margin-right: auto;
     margin-left: 10px;
+    font-size: 18px;
 }
 
 .perfil_div img{
     border-radius: 50%;
-    height: 90%;
-    width: 100%;
+    height: 70%;
+    width: 70%;
     margin: auto;
 }
 
@@ -190,9 +195,10 @@ header ul::before {
 }
 
 .div_imagen_publi{
-    width: 90%;
+    width: 100%;
     height: 90%;
     margin: auto;
+    border: 2px solid black;
 }
 
 .div_imagen_publi img{
@@ -204,12 +210,22 @@ header ul::before {
     width: 90%;
     margin: auto;
     background-color: white;
+    border: 1px solid black;
+    border-radius: 16px;
+    transition: 0.5s;
 }
 
 .div_coments h4 {
     text-align: center;
     margin: auto;
 }
+
+
+
+
+/*  HOVERS /////////////////////////////////////////////// */
+
+
 
 
 
