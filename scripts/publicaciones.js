@@ -1,27 +1,26 @@
 let publicaciones = [
   {
-    usuario: "jsmith",
-    ftoPerfil: "./assets/jssmith_perfil.jpg",
-    imagenPubli: "./assets/imagenpubli_jssmith.jpg",
+    usuario: "carlover_91",
+    ftoPerfil: "./assets/carlover91_perfil.jpg",
+    imagenPubli: "./assets/imagenpubli_carlover91.jpg",
     seguidores: "seguidores 876",
-    comment: "¡Hermoso día en contacto con la naturaleza! 🌿💚",
+    comment: "¡Un día perfecto para conducir con estilo! 🚗💨",
   },
   {
-    usuario: "EcoWarrior87",
-    ftoPerfil: "./assets/ecowarriorfto.jpg",
-    imagenPubli: "./assets/ecowarrior_publi.jpg",
+    usuario: "MotorEnthusiast",
+    ftoPerfil: "./assets/motorenthusiast_fto.jpg",
+    imagenPubli: "./assets/motorenthusiast_publi.jpg",
     seguidores: "seguidores 2391",
-    comment: "¡Feliz de compartir esta imagen desde el parque eólico local!",
+    comment: "¡Compartiendo la emoción de los motores poderosos!",
   },
   {
-    usuario: "EarthLover21",
-    ftoPerfil: "./assets/earthloverfto.jpg",
-    imagenPubli: "./assets/earthloverpubli.jpg",
+    usuario: "SpeedDemon19",
+    ftoPerfil: "./assets/speeddemon19_fto.jpeg",
+    imagenPubli: "./assets/speeddemon19_publi.jpg",
     seguidores: "seguidores 429",
-    comment: "💙🏖️ #EarthLover #BeachVibes",
+    comment: "🔥🏁 #SpeedDemon #AdrenalineJunkie",
   },
 ];
-
 const divPublicaciones = document.getElementById("divPublicaciones");
 
 publicaciones.forEach((user) => {
