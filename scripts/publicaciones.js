@@ -21,6 +21,7 @@ let publicaciones = [
     comment: "🔥🏁 #SpeedDemon #AdrenalineJunkie",
   },
 ];
+
 const divPublicaciones = document.getElementById("divPublicaciones");
 
 publicaciones.forEach((user) => {
@@ -59,11 +60,39 @@ publicaciones.forEach((user) => {
   let h4 = document.createElement("h4");
   h4.innerHTML = user.comment;
 
+  let div5 = document.createElement("div");
+  div5.classList.add("div_newComments");
+
+  let input = document.createElement("input");
+  input.setAttribute("type", "text");
+  input.setAttribute("placeholder", "Agrega un comentario");
+
+  let button = document.createElement("button");
+  button.innerHTML = "Enviar";
+
+  let divHijoDiv5 = document.createElement("div");
+  divHijoDiv5.classList.add("newComent");
+
+  button.addEventListener("click", function () {
+    if (input.value !== "") {
+      let h3Coment = document.createElement("h3");
+      h3Coment.innerHTML = input.value;
+      input.value = "";
+      divHijoDiv5.appendChild(h3Coment);
+    }
+  });
+
+  div5.appendChild(input);
+  div5.appendChild(button);
+  div5.appendChild(divHijoDiv5);
+
   div4.appendChild(h4);
 
   div.appendChild(div2);
   div.appendChild(div3);
   div.appendChild(div4);
+  div.appendChild(div5);
 
   divPublicaciones.appendChild(div);
 });
+
