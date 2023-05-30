@@ -22,11 +22,14 @@ let publicaciones = [
   },
 ];
 
+
 const divPublicaciones = document.getElementById("divPublicaciones");
 
 publicaciones.forEach((user) => {
   let div = document.createElement("div");
   div.classList.add("divContenedorPubli");
+
+  /* INFO DEL PERFIL *///////////////////////////////////////////////////////////////////////////////
 
   let div2 = document.createElement("div");
   div2.classList.add("perfil_div");
@@ -45,6 +48,8 @@ publicaciones.forEach((user) => {
   div2.appendChild(h2);
   div2.appendChild(h4Perfil);
 
+  /* IMAGEN DE LA PUBLICACION */////////////////////////////////////////////////////////
+
   let div3 = document.createElement("div");
   div3.classList.add("div_imagen_publi");
 
@@ -54,11 +59,17 @@ publicaciones.forEach((user) => {
 
   div3.appendChild(img2);
 
+  /* COMENTARIO DE LA PUBLICACION *//////////////////////////////////////////////////////
+  
   let div4 = document.createElement("div");
   div4.classList.add("div_coments");
-
+  
   let h4 = document.createElement("h4");
   h4.innerHTML = user.comment;
+  
+  div4.appendChild(h4);
+  
+  /* NUEVOS COMENTARIOS *///////////////////////////////////////////////////////////////////
 
   let div5 = document.createElement("div");
   div5.classList.add("div_newComments");
@@ -77,7 +88,6 @@ publicaciones.forEach((user) => {
     if (input.value !== "") {
       let h3Coment = document.createElement("h3");
       h3Coment.innerHTML = input.value;
-      input.value = "";
       divHijoDiv5.appendChild(h3Coment);
     }
   });
@@ -86,7 +96,8 @@ publicaciones.forEach((user) => {
   div5.appendChild(button);
   div5.appendChild(divHijoDiv5);
 
-  div4.appendChild(h4);
+
+  /* SE ASIGNAN LOS HIJOS *////////////////////////////////////////////////////////////
 
   div.appendChild(div2);
   div.appendChild(div3);

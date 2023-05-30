@@ -55,7 +55,8 @@ header{
 }
 
 header h1{
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
     color: rgb(255, 251, 0);
     margin: auto;
     font-size: 30px;
@@ -221,4 +222,26 @@ header ul::before {
 
 .whats:hover{
     background-color: rgb(0, 175, 0);
+}
+
+@media screen and (min-width: 900px){
+    header{
+        justify-content: space-evenly;
+    }
+
+    header ul::before {
+        background-size: auto;
+    }
+
+    header ul{
+        width: 40%;
+    }
+
+    header h1{
+        margin: auto 0 auto 0;
+    }
+
+    header label{
+        width: 225px;
+    }
 }
